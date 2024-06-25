@@ -19,6 +19,9 @@
       .gradient {
         background: linear-gradient(90deg, #fe7faa 0%, #a468e3 100%);
       }
+      .language-selector {
+            margin: 10px;
+        }
     </style>
   </head>
   <body class="leading-normal tracking-normal text-white gradient" style="font-family: 'Source Sans Pro', sans-serif;">
@@ -195,6 +198,16 @@
               <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="#FAQs">FAQs</a>
             </li>
           </ul>
+          <div class="language-selector">
+            <select onchange="changeLanguage(this.value)">
+              <option value="en">English</option>
+              <option value="zh">中文</option>
+              <option value="de">Deutsch</option>
+              <option value="es">Español</option>
+              <option value="ja">日本語</option>
+              <option value="ko">한국어</option>
+          </select>
+        </div>
           <a href="playground.html">
           <button
             id="navAction"
@@ -310,6 +323,15 @@
         </h2>
         <div class="w-full mb-4">
           <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+        </div>
+        <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+        <blockquote class="twitter-tweet"><p lang="en" dir="ltr">MimicBrush can edit an image region of interest by drawing inspiration from a reference image by capturing the semantic correspondence between separate images in a self-supervised manner.<br><br>Links ⬇️ <a href="https://t.co/X94eQf5Wda">pic.twitter.com/X94eQf5Wda</a></p>&mdash; Dreaming Tulpa 🥓👑 (@dreamingtulpa) <a href="https://twitter.com/dreamingtulpa/status/1803462478493368561?ref_src=twsrc%5Etfw">June 19, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+        <blockquote class="twitter-tweet"><p lang="en" dir="ltr">MimicBrush: Zero-shot Image Editing with Reference Imitation <a href="https://t.co/Pu0OT2sMkW">pic.twitter.com/Pu0OT2sMkW</a></p>&mdash; Toorop (@Tooropai) <a href="https://twitter.com/Tooropai/status/1803180211502195127?ref_src=twsrc%5Etfw">June 18, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+        <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">MimicBrushは参照画像の外観に基づいて、選択した部分を参照画像のように見えるように自動的に変更します。<br><br>こうすることで、画像全体ではなく画像の特定の部分のみを変更できます。<br> <a href="https://t.co/GOq6QYIzEf">pic.twitter.com/GOq6QYIzEf</a></p>&mdash; さとり (@satori_sz9) <a href="https://twitter.com/satori_sz9/status/1803092263540838645?ref_src=twsrc%5Etfw">June 18, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
         <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
         <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Zero-shot Image Editing with Reference Imitation<br><br>Image editing serves as a practical yet challenging task considering the diverse demands from users, where one of the hardest parts is to precisely describe how the edited image should look like. In this work, we <a href="https://t.co/Fh3fdUdGJ9">pic.twitter.com/Fh3fdUdGJ9</a></p>&mdash; AK (@_akhaliq) <a href="https://twitter.com/_akhaliq/status/1800726257098760584?ref_src=twsrc%5Etfw">June 12, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -684,6 +706,35 @@
         return false;
       }
     </script>
+        <script>
+          const translations = {
+              en: {
+                  url: "index.html"
+              },
+
+              de: {
+                  url: "/de/index.html"
+              },
+              es: {
+                  url: "/es/index.html"
+              },
+              zh: {
+                  url: "/zh/index.html"
+              },
+              ja: {
+                  url: "/ja/index.html"
+              },
+              ko: {
+                  url: "/ko/index.html"
+              }
+          };
+  
+          function changeLanguage(lang) {
+              if (translations[lang] && translations[lang].url) {
+                  window.location.href = translations[lang].url;
+              }
+          }
+      </script>
 <div style="display: none;">
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-MBZGM4NX8D"></script>

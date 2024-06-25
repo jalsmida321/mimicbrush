@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>
-      MimicBrush: The Ultimate Creative AI for Digital Art
+      MimicBrush: La IA creativa definitiva para el arte digital 
     </title>
-    <meta name="description" content="MimicBrush is a cutting-edge AI software designed to unleash your creativity in digital art. With its advanced capabilities, MimicBrush offers an unparalleled experience for artists and designers, empowering them to produce stunning and unique artworks with ease and precision." />
-    <meta name="keywords" content="MimicBrush, AI software, digital art, creativity, advanced capabilities, artists, designers, unique artworks, ease, precision" />
+    <meta name="description" content="MimicBrush es un software de IA de última generación diseñado para dar rienda suelta a la creatividad en el arte digital.Las funciones avanzadas de MimicBrush permiten a artistas y diseñadores crear con facilidad y precisión obras de arte impresionantes y únicas." />
+    <meta name="keywords" content="MimicBrush, software de IA, arte digital, creatividad, funciones avanzadas, artistas, diseñadores, obras de arte únicas, fácil, preciso" />
     <meta name="author" content="" />
     <link rel="canonical" hrefLang="en-US" href=“https://mimicbrush.art/”/>
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/>
@@ -19,6 +19,9 @@
       .gradient {
         background: linear-gradient(90deg, #fe7faa 0%, #a468e3 100%);
       }
+      .language-selector {
+            margin: 10px;
+        }
     </style>
   </head>
   <body class="leading-normal tracking-normal text-white gradient" style="font-family: 'Source Sans Pro', sans-serif;">
@@ -175,7 +178,7 @@
         <div class="block lg:hidden pr-4">
           <button id="nav-toggle" class="flex items-center p-1 text-pink-800 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
             <svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-              <title>Menu</title>
+              <title>Menú artístico de MimicBrush </title>
               <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
             </svg>
           </button>
@@ -183,16 +186,16 @@
         <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20" id="nav-content">
           <ul class="list-reset lg:flex justify-end flex-1 items-center">
             <li class="mr-3">
-              <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="/index.html">Home</a>
+              <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="/es/index.html">Inicio</a>
             </li>
             <li class="mr-3">
-              <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="/playground.html">Playground</a>
+              <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="/es/playground.html">Área de juegos</a>
             </li>
             <li class="mr-3">
-              <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="/index.html#Features">Features</a>
+              <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="/es/index.html#Features">Características</a>
             </li>
             <li class="mr-3">
-              <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="/index.html#FAQs">FAQs</a>
+              <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="/es/index.html#FAQs">Preguntas frecuentes</a>
             </li>
           </ul>
           <div class="language-selector">
@@ -205,12 +208,12 @@
               <option value="ko">한국어</option>
           </select>
         </div>
-          <a href="playground.html">
+          <a href="/es/playground.html">
           <button
             id="navAction"
             class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
           >
-            Get Start
+          Comenzar
           </button></a>
         </div>
       </div>
@@ -218,28 +221,227 @@
     </nav>
     <!--Hero-->
     <div class="pt-24">
-        <div class="flex items-center justify-center">
-            <!--Left Col-->
-            <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-center">    
-              <h1 class="my-4 text-5xl font-bold leading-tight">
-                MimicBrush Playground
-              </h1>
-            </div>
+      <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
+        <!--Left Col-->
+        <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
+         
+          <h1 class="my-4 text-5xl font-bold leading-tight">
+            MimicBrush: La IA creativa definitiva para el arte digital
+          </h1>
+          <p class="leading-normal text-2xl mb-8">
+            Edición de imágenes sin disparos con imitación de referencia
+          </p>
+          <a href="/es/playground.html">
+          <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+            Comenzar
+          </button></a>
         </div>
-      <iframe
-      src="https://xichenhku-mimicbrush.hf.space"
-      class="w-full border-0 h-[2400px]"
-      frameborder="0"
-      height="2400"
-  ></iframe>
+        <!--Right Col-->
+        <div class="w-full md:w-3/5 py-6 text-center">
+          <img class="w-full md:w-4/5 z-50 border-radius:20px" src="/hero.png" />
+        </div>
+      </div>
     </div>
+    <div class="relative -mt-12 lg:-mt-24">
+      <svg viewBox="0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <g transform="translate(-2.000000, 44.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <path d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496" opacity="0.100000001"></path>
+            <path
+              d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"
+              opacity="0.100000001"
+            ></path>
+            <path d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z" id="Path-4" opacity="0.200000003"></path>
+          </g>
+          <g transform="translate(-4.000000, 76.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <path
+              d="M0.457,34.035 C57.086,53.198 98.208,65.809 123.822,71.865 C181.454,85.495 234.295,90.29 272.033,93.459 C311.355,96.759 396.635,95.801 461.025,91.663 C486.76,90.01 518.727,86.372 556.926,80.752 C595.747,74.596 622.372,70.008 636.799,66.991 C663.913,61.324 712.501,49.503 727.605,46.128 C780.47,34.317 818.839,22.532 856.324,15.904 C922.689,4.169 955.676,2.522 1011.185,0.432 C1060.705,1.477 1097.39,3.129 1121.236,5.387 C1161.703,9.219 1208.621,17.821 1235.4,22.304 C1285.855,30.748 1354.351,47.432 1440.886,72.354 L1441.191,104.352 L1.121,104.031 L0.457,34.035 Z"
+            ></path>
+          </g>
+        </g>
+      </svg>
+    </div>
+    
+    <section id="Features" class="bg-white border-b py-8">
+      <div class="container max-w-5xl mx-auto m-8">
+        <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
+          Características de MimicBrush
+        </h2>
+        <div class="w-full mb-4">
+          <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+        </div>
+        <div class="flex flex-wrap">
+          <div class="w-5/6 sm:w-1/2 p-6">
+            <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
+              Edición de región local
+            </h3>
+            <p class="text-gray-600 mb-8">
+              MimicBrush permite a los usuarios editar regiones específicas de una imagen mientras preservan el contexto circundante, lo que permite modificaciones precisas y localizadas.
+             
+            </p>
+            <img src="/src/img/PartComp.png" alt="Feature image" class="rounded-xl  main-border-gray"/>
+          </div>
 
-   
+          <div class="w-5/6 sm:w-1/2 p-6">
+            <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
+              Transferencia de texturas
+            </h3>
+            <p class="text-gray-600 mb-8">
+              Los usuarios pueden transferir texturas de una imagen a otra, lo que permite una mezcla creativa e integración sin fisuras de diferentes elementos visuales.
+             
+            </p>
+            <img src="/src/img/texture.png" alt="Feature image" class="rounded-xl  main-border-gray"/>
+          </div>
 
+          <div class="w-5/6 sm:w-1/2 p-6">
+            <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
+              Refinamiento de post-procesamiento
+            </h3>
+            <p class="text-gray-600 mb-8">
+              MimicBrush ofrece técnicas avanzadas de post-procesamiento para refinar y mejorar la imagen editada, asegurando resultados de alta calidad y aspecto natural.
+            </p>
+            <img src="/src/img/Refine.png" alt="Feature image" class="rounded-xl  main-border-gray"/>
+          </div>
 
-     
+          <div class="w-5/6 sm:w-1/2 p-6">
+            <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
+              Canalización general
+            </h3>
+            <p class="text-gray-600 mb-8">
+              El proceso de entrenamiento de MimicBrush. Primero, tomamos al azar dos fotogramas de una secuencia de video como referencia e imagen fuente. La imagen fuente se enmascara y se somete a aumentación de datos. Posteriormente, alimentamos la latencia de imagen ruidosa, la máscara, la latencia de fondo y la latencia de profundidad de la imagen fuente en el U-Net imitativo. La imagen de referencia también se aumenta y se envía al U-Net de referencia. Los U-Nets duales se entrenan para recuperar el área enmascarada de la imagen fuente. Las claves y valores de atención del U-Net de referencia se concatenan con el U-Net imitativo para ayudar a la síntesis de las regiones enmascaradas.
+            </p>
+            <img src="/src/img/pipeline.png" alt="Feature image" class="rounded-xl  main-border-gray"/>
+          </div> 
+        </div>
+      </div>
     </section>
 
+    <section class="bg-white border-b py-8">
+      <div class="container mx-auto flex flex-wrap pt-4 pb-12">
+        <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
+          Tweets de MimicBrush
+        </h2>
+        <div class="w-full mb-4">
+          <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+        </div>
+        <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+        <blockquote class="twitter-tweet"><p lang="en" dir="ltr">MimicBrush can edit an image region of interest by drawing inspiration from a reference image by capturing the semantic correspondence between separate images in a self-supervised manner.<br><br>Links ⬇️ <a href="https://t.co/X94eQf5Wda">pic.twitter.com/X94eQf5Wda</a></p>&mdash; Dreaming Tulpa 🥓👑 (@dreamingtulpa) <a href="https://twitter.com/dreamingtulpa/status/1803462478493368561?ref_src=twsrc%5Etfw">June 19, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+        <blockquote class="twitter-tweet"><p lang="en" dir="ltr">MimicBrush: Zero-shot Image Editing with Reference Imitation <a href="https://t.co/Pu0OT2sMkW">pic.twitter.com/Pu0OT2sMkW</a></p>&mdash; Toorop (@Tooropai) <a href="https://twitter.com/Tooropai/status/1803180211502195127?ref_src=twsrc%5Etfw">June 18, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+        <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">MimicBrushは参照画像の外観に基づいて、選択した部分を参照画像のように見えるように自動的に変更します。<br><br>こうすることで、画像全体ではなく画像の特定の部分のみを変更できます。<br> <a href="https://t.co/GOq6QYIzEf">pic.twitter.com/GOq6QYIzEf</a></p>&mdash; さとり (@satori_sz9) <a href="https://twitter.com/satori_sz9/status/1803092263540838645?ref_src=twsrc%5Etfw">June 18, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+        <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Zero-shot Image Editing with Reference Imitation<br><br>Image editing serves as a practical yet challenging task considering the diverse demands from users, where one of the hardest parts is to precisely describe how the edited image should look like. In this work, we <a href="https://t.co/Fh3fdUdGJ9">pic.twitter.com/Fh3fdUdGJ9</a></p>&mdash; AK (@_akhaliq) <a href="https://twitter.com/_akhaliq/status/1800726257098760584?ref_src=twsrc%5Etfw">June 12, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+        <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">アパレルに携わっている人は全員MimicBrushチェックすべき。もうモデル撮影が不要だわ。これまで無理だった帽子もカバンも行けちゃうわコレ。毎 月100万円単位で得する。アパレルやってなくても触 っておくだけで話のネタになるので10倍モテるわ（さとり構文）🤪<a href="https://t.co/RNt92gZenc">https://t.co/RNt92gZenc</a> <a href="https://t.co/DcRKsFO6VB">pic.twitter.com/DcRKsFO6VB</a></p>&mdash; o-ken🍻仕組みクリエイター (@tamanimitel) <a href="https://twitter.com/tamanimitel/status/1801504112720417008?ref_src=twsrc%5Etfw">June 14, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+        <blockquote class="twitter-tweet"><p lang="zh" dir="ltr">阿里这个图片编辑的项目挺好，可以将一张图片的某一部分融合到领一张图片上去。<br><br>用在电商商品展示上或者单纯的图片编辑和内容迁移很有用。从演示来看效果也很好。<br><br>MimicBrush，它会随机选择视频剪辑中的两帧，遮盖其中一帧的某些区域，并学习使用另一帧的信息恢复这些被遮盖的区域。 <a href="https://t.co/ymUIENNDzX">pic.twitter.com/ymUIENNDzX</a></p>&mdash; 歸藏(guizang.ai) (@op7418) <a href="https://twitter.com/op7418/status/1800859175427383723?ref_src=twsrc%5Etfw">June 12, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+      </div>
+    </section>
+    
+
+    <section id="FAQs" class="bg-[#f7f6f2]">
+      <!-- Container -->
+      <div class="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-24 lg:py-32">
+        <!-- Heading -->
+        <div class="mx-auto mb-8 max-w-3xl text-center md:mb-12 lg:mb-16">
+          <div class="mx-auto mt-4 max-w-[528px]">
+            <p class="text-[#fe7faa]">¿TIENES ALGUNA PREGUNTA?</p>
+          </div>
+          <h2 class="mb-4 mt-6 text-3xl font-extrabold md:text-5xl">Preguntas frecuentes</h2>
+          
+        </div>
+        <!-- FAQ Items -->
+        <div class="mb-8 grid grid-cols-1 justify-center gap-4 md:mb-12 lg:mb-16 lg:grid-cols-2">
+          <!-- FAQ Left Col -->
+          <div class="w-full">
+            <div class="mb-6 w-full rounded-xl bg-white p-8">
+              <div class="flex cursor-pointer items-start justify-between">
+                <div class="text-xl font-bold" style="color: black;">¿Qué es Mimicbrush?</div>
+                <div class="relative ml-10 mt-1 flex h-5 w-5 items-center justify-center">
+                  <div class="absolute h-5 w-0.5 bg-[#0b0b1f]"></div>
+                  <div class="h-0.5 w-5 bg-[#0b0b1f]"></div>
+                </div>
+              </div>
+              <div class="w-full max-w-[640px] pt-4 lg:max-w-[960px]">
+                <p class="tracking-[0.2px]" style="color: black;">Mimicbrush es una herramienta o aplicación innovadora diseñada para mejorar la eficiencia y la calidad de la creación artística o tareas específicas.</p>
+              </div>
+            </div>
+            <div class="mb-6 w-full rounded-xl bg-white p-8">
+              <div class="flex cursor-pointer items-start justify-between">
+                <div class="text-xl font-bold" style="color: black;">¿Cómo uso Mimicbrush?</div>
+                <div class="relative ml-10 mt-1 flex h-5 w-5 items-center justify-center">
+                  <div class="absolute h-5 w-0.5 bg-[#0b0b1f]"></div>
+                  <div class="h-0.5 w-5 bg-[#0b0b1f]"></div>
+                </div>
+              </div>
+              <div class="w-full max-w-[640px] pt-4 lg:max-w-[960px]">
+                <p class="tracking-[0.2px]" style="color: black;">Dependiendo de las funciones específicas y el diseño de Mimicbrush, es posible que necesite descargar el software relevante o acceder a su servicio a través de una plataforma específica. Las instrucciones detalladas sobre cómo usarlo generalmente se encuentran en su sitio web oficial o en la tienda de aplicaciones.</p>
+              </div>
+            </div>
+            <div class="mb-6 w-full rounded-xl bg-white p-8">
+              <div class="flex cursor-pointer items-start justify-between">
+                <div class="text-xl font-bold" style="color: black;">¿Para quién es Mimicbrush?</div>
+                <div class="relative ml-10 mt-1 flex h-5 w-5 items-center justify-center">
+                  <div class="absolute h-5 w-0.5 bg-[#0b0b1f]"></div>
+                  <div class="h-0.5 w-5 bg-[#0b0b1f]"></div>
+                </div>
+              </div>
+              <div class="w-full max-w-[640px] pt-4 lg:max-w-[960px]">
+                <p class="tracking-[0.2px]" style="color: black;">Mimicbrush es adecuado para profesionales o entusiastas que buscan mejorar la eficiencia de su creación artística y lograr trabajos de alta calidad.</p>
+              </div>
+            </div>
+          </div>
+          <!-- FAQ Right Col -->
+          <div class="w-full">
+            <div class="mb-6 w-full rounded-xl bg-white p-8">
+              <div class="flex cursor-pointer items-start justify-between">
+                <div class="text-xl font-bold" style="color: black;">¿Es necesario un hardware especial para usar Mimicbrush?</div>
+                <div class="relative ml-10 mt-1 flex h-5 w-5 items-center justify-center">
+                  <div class="absolute h-5 w-0.5 bg-[#0b0b1f]"></div>
+                  <div class="h-0.5 w-5 bg-[#0b0b1f]"></div>
+                </div>
+              </div>
+              <div class="w-full max-w-[640px] pt-4 lg:max-w-[960px]">
+                <p class="tracking-[0.2px]" style="color: black;">No necesariamente. Mimicbrush está diseñado para una amplia gama de usuarios y puede ejecutarse en computadoras y teléfonos inteligentes regulares. Sin embargo, los usuarios profesionales que necesitan funciones avanzadas tendrán una mejor experiencia utilizando dispositivos con procesadores y tarjetas gráficas de alto rendimiento.</p>
+              </div>
+            </div>
+            <div class="mb-6 w-full rounded-xl bg-white p-8">
+              <div class="flex cursor-pointer items-start justify-between">
+                <div class="text-xl font-bold" style="color: black;">¿Mimicbrush proporciona tutoriales en línea o manuales de usuario?</div>
+                <div class="relative ml-10 mt-1 flex h-5 w-5 items-center justify-center">
+                  <div class="absolute h-5 w-0.5 bg-[#0b0b1f]"></div>
+                  <div class="h-0.5 w-5 bg-[#0b0b1f]"></div>
+                </div>
+              </div>
+              <div class="w-full max-w-[640px] pt-4 lg:max-w-[960px]">
+                <p class="tracking-[0.2px]" style="color: black;">Sí, Mimicbrush proporciona tutoriales en línea y manuales de usuario completos en su sitio web oficial, ayudando a los usuarios a comprender cómo aprovechar al máximo todas las funciones y características de esta herramienta.</p>
+              </div>
+            </div>
+            <div class="mb-6 w-full rounded-xl bg-white p-8">
+              <div class="flex cursor-pointer items-start justify-between">
+                <div class="text-xl font-bold" style="color: black;">¿Mimicbrush tiene soporte comunitario o un foro de usuarios?</div>
+                <div class="relative ml-10 mt-1 flex h-5 w-5 items-center justify-center">
+                  <div class="absolute h-5 w-0.5 bg-[#0b0b1f]"></div>
+                  <div class="h-0.5 w-5 bg-[#0b0b1f]"></div>
+                </div>
+              </div>
+              <div class="w-full max-w-[640px] pt-4 lg:max-w-[960px]">
+                <p class="tracking-[0.2px]" style="color: black;">Sí, Mimicbrush tiene una comunidad activa y un foro de usuarios donde los usuarios pueden intercambiar experiencias, compartir trabajos y resolver problemas encontrados. Este es un buen lugar para aprender y crecer. Si estás interesado, contáctanos.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mb-8 md:mb-12 lg:mb-16"></div>
+        <p class="text-center">¿No puedes encontrar la respuesta que estás buscando? Ponte en contacto con nuestro <a href="/es/index.html#contact" class="text-black">equipo de soporte al cliente</a>.</p>
+      </div>
+    </section>
     <!--Footer-->
     <footer class="bg-white">
       <div class="container mx-auto px-8">
@@ -392,16 +594,16 @@
             </a>
           </div>
           <div class="flex-1">
-            <p class="uppercase text-gray-500 md:mb-6">Links</p>
+            <p class="uppercase text-gray-500 md:mb-6">Enlaces</p>
             <ul class="list-reset mb-6">
               <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">FAQs</a>
+                <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Preguntas frecuentes</a>
               </li>
               <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Contact</a>
+                <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Contacto</a>
               </li>
               <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Donate</a>
+                <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Donar</a>
               </li>
             </ul>
           </div>
@@ -409,16 +611,16 @@
             <p class="uppercase text-gray-500 md:mb-6">Legal</p>
             <ul class="list-reset mb-6">
               <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Terms</a>
+                <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Términos</a>
               </li>
               <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Privacy</a>
+                <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Privacidad</a>
               </li>
             </ul>
           </div>
         </div>
       </div>
-      <a href="https://www.mimicbrush.art" class="text-gray-500">© MimicBrush - The Ultimate Creative AI for Digital Art.</a>
+      <a href="https://www.mimicbrush.art" class="text-gray-500">© MimicBrush -  La IA creativa definitiva para el arte digital.</a>
     </footer>
     <!-- jQuery if you need it
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -504,45 +706,45 @@
         return false;
       }
     </script>
-    <script>
-      const translations = {
-          en: {
-              url: "index.html"
-          },
+        <script>
+          const translations = {
+              en: {
+                  url: "index.html"
+              },
 
-          de: {
-              url: "/de/index.html"
-          },
-          es: {
-              url: "/es/index.html"
-          },
-          zh: {
-              url: "/zh/index.html"
-          },
-          ja: {
-              url: "/ja/index.html"
-          },
-          ko: {
-              url: "/ko/index.html"
-          }
-      };
-
-      function changeLanguage(lang) {
-          if (translations[lang] && translations[lang].url) {
-              window.location.href = translations[lang].url;
-          }
-      }
-  </script>
-    <div style="display: none;">
-      <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MBZGM4NX8D"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+              de: {
+                  url: "/de/index.html"
+              },
+              es: {
+                  url: "/es/index.html"
+              },
+              zh: {
+                  url: "/zh/index.html"
+              },
+              ja: {
+                  url: "/ja/index.html"
+              },
+              ko: {
+                  url: "/ko/index.html"
+              }
+          };
   
-    gtag('config', 'G-MBZGM4NX8D');
-  </script>
-  </div>
+          function changeLanguage(lang) {
+              if (translations[lang] && translations[lang].url) {
+                  window.location.href = translations[lang].url;
+              }
+          }
+      </script>
+<div style="display: none;">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MBZGM4NX8D"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MBZGM4NX8D');
+</script>
+</div>
   </body>
 </html>
