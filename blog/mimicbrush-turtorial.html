@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>AI Art: The Future of Creativity | MimicBrush Blog</title>
-    <meta name="description" content="Explore how artificial intelligence is transforming the landscape of digital art and design, revealing the revolutionary potential of AI in creative industries." />
+    <title>Complete Guide to MimicBrush & AI Art Tools</title>
+    <meta name="description" content="Discover the ultimate guide to MimicBrush and explore the world of AI art tools. Learn how to unleash your creativity with cutting-edge technologies, tips for using MimicBrush effectively, and insights into the future of digital art creation. Perfect for artists and enthusiasts alike!" />
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
     <style>
@@ -75,11 +75,10 @@
     <!-- Header with Gradient Background -->
     <header class="gradient text-white py-20">
         <div class="container mx-auto px-6 text-center">
-            <h1 class="text-4xl md:text-5xl font-bold mb-4">AI Art: The Future of Creativity</h1>
-            <p class="text-xl mb-8">How Artificial Intelligence is Reshaping Digital Art</p>
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Complete Guide to MimicBrush & AI Art Tools</p>
             <div class="flex justify-center items-center space-x-4">
-                <span class="text-sm">Published on Dec 21, 2024</span>
-                <span class="text-sm">5 min read</span>
+                <span class="text-sm">Published on May 11, 2025</span>
+                <span class="text-sm">10 min read</span>
             </div>
         </div>
     </header>
@@ -126,6 +125,161 @@
             </div>
         </div>
     </section>
+
+    <!-- Tutorial Content -->
+    <main class="container mx-auto px-6 py-12">
+        <article class="max-w-4xl mx-auto">
+            <h1 class="text-4xl font-bold mb-8">Complete Guide to MimicBrush & AI Art Tools</h1>
+
+            <!-- Quick Start Section -->
+            <section class="mb-16">
+                <h2 class="text-3xl font-bold mb-6">1. MimicBrush Quick Use Tutorial</h2>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Local Deployment -->
+                    <div class="bg-white bg-opacity-10 p-6 rounded-xl">
+                        <h3 class="text-2xl font-semibold mb-4">Local Deployment (ComfyUI)</h3>
+                        <div class="space-y-4">
+                            <h4 class="font-bold">Requirements:</h4>
+                            <ul class="list-disc pl-6">
+                                <li>Windows OS</li>
+                                <li>GPU with 8GB+ VRAM</li>
+                                <li>CUDA 12.1</li>
+                            </ul>
+                            <h4 class="font-bold">Installation:</h4>
+                            <pre class="code-block"><code>
+1. Install via ComfyUI Manager
+2. Restart to download models (~10GB)
+3. Right-click image → "Open in Mask Editor"
+                            </code></pre>
+                        </div>
+                    </div>
+
+                    <!-- Cloud Deployment -->
+                    <div class="bg-white bg-opacity-10 p-6 rounded-xl">
+                        <h3 class="text-2xl font-semibold mb-4">Cloud Deployment (Xinghai Platform)</h3>
+                        <div class="space-y-4">
+                            <pre class="code-block"><code>
+Operation Flow:
+1. Create GPU instance
+2. Select MimicBrush image
+3. Upload source image
+4. Draw editable area
+5. Upload reference image
+6. Check "Keep original shape"
+7. Click Run Generate
+                            </code></pre>
+                            <h4 class="font-bold">Key Parameters:</h4>
+                            <ul class="list-disc pl-6">
+                                <li>if_keep_shape: Preserve structure</li>
+                                <li>Weight: 0.5-1.2 (style strength)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tool Comparison -->
+            <section class="mb-16">
+                <h2 class="text-3xl font-bold mb-6">2. Tool Feature Matrix</h2>
+                <div class="overflow-x-auto">
+                    <table class="w-full bg-white bg-opacity-10 rounded-xl">
+                        <thead>
+                            <tr class="border-b border-white/20">
+                                <th class="p-4 text-left">Feature</th>
+                                <th class="p-4">MimicBrush</th>
+                                <th class="p-4">Photoshop</th>
+                                <th class="p-4">ControlNet</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-white/10">
+                                <td class="p-4">Learning Curve</td>
+                                <td class="p-4">Zero-shot</td>
+                                <td class="p-4">Expert</td>
+                                <td class="p-4">Detailed Labeling</td>
+                            </tr>
+                            <tr class="border-b border-white/10">
+                                <td class="p-4">Processing Speed</td>
+                                <td class="p-4">15s (RTX3080)</td>
+                                <td class="p-4">Manual</td>
+                                <td class="p-4">Multi-stage</td>
+                            </tr>
+                            <!-- Add more comparison rows -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Case Studies -->
+            <section class="mb-16">
+                <h2 class="text-3xl font-bold mb-6">3. Application Cases</h2>
+                
+                <!-- E-commerce Example -->
+                <div class="bg-white bg-opacity-10 p-6 rounded-xl mb-8">
+                    <h3 class="text-2xl font-semibold mb-4">E-commerce Customization</h3>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <img src="../src/img/case-mug.jpg" alt="Mug customization" class="rounded-lg">
+                        <div>
+                            <h4 class="font-bold mb-2">Ceramic Texture Transfer:</h4>
+                            <pre class="code-block"><code>
+Parameters:
+- if_keep_shape: true
+- Weight: 0.85
+- Brush size: adaptive
+                            </code></pre>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- VFX Example -->
+                <div class="bg-white bg-opacity-10 p-6 rounded-xl mb-8">
+                    <h3 class="text-2xl font-semibold mb-4">Film VFX Production</h3>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="font-bold mb-2">Robotic Arm Addition:</h4>
+                            <ol class="list-decimal pl-6">
+                                <li>Create shoulder mask</li>
+                                <li>Upload robot arm reference</li>
+                                <li>Enable shape retention</li>
+                            </ol>
+                        </div>
+                        <img src="../src/img/vfx-case.jpg" alt="VFX example" class="rounded-lg">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Advanced Techniques -->
+            <section>
+                <h2 class="text-3xl font-bold mb-6">4. Advanced Workflows</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-white bg-opacity-10 p-6 rounded-xl">
+                        <h3 class="text-xl font-semibold mb-3">Multi-layer Masking</h3>
+                        <pre class="code-block"><code>
+Implementation:
+1. Process clothing patterns
+2. Modify accessory materials
+3. Combine regions using:
+   - layer_merge: "multiply"
+   - opacity: 0.7-0.9
+                        </code></pre>
+                    </div>
+                    
+                    <div class="bg-white bg-opacity-10 p-6 rounded-xl">
+                        <h3 class="text-xl font-semibold mb-3">CLIP Integration</h3>
+                        <pre class="code-block"><code>
+Text Prompt Example:
+{
+  "style": "Van Gogh Starry Night",
+  "material": "oil painting texture",
+  "weight": 1.1
+}
+                        </code></pre>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
 
     <footer class="bg-white">
         <div class="container mx-auto px-8">
