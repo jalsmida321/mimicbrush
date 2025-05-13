@@ -10,6 +10,7 @@
     <link rel="canonical" href="https://mimicbrush.art/blog" />
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" href="src\img\favicon.ico" type="image/x-icon">
     <style>
         .gradient {
@@ -85,30 +86,91 @@
     </div>
     
     <!-- Blog Posts Grid -->
-    <section class="container mx-auto px-6 py-10">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Blog Post 1 -->
-            <div class="bg-white bg-opacity-20 rounded-lg p-6 shadow-lg">
-                <h2 class="text-2xl font-bold mb-4 text-white">AI Art: The Future of Creativity</h2>
-                <p class="text-white mb-4">Explore how artificial intelligence is transforming the landscape of digital art and design.</p>
-                <a href="https://mimicbrush.com/blog/the-future-of-creativity.html" class="text-pink-300 hover:text-pink-200">Read More</a>
-            </div>
-
-            <!-- Blog Post 2 -->
-            <div class="bg-white bg-opacity-20 rounded-lg p-6 shadow-lg">
-                <h2 class="text-2xl font-bold mb-4 text-white">MimicBrush: Behind the Technology</h2>
-                <p class="text-white mb-4">An inside look at the innovative AI algorithms that power MimicBrush's creative capabilities.</p>
-                <a href="https://mimicbrush.com/blog/mimicbrush-behind-the-tech.html" class="text-pink-300 hover:text-pink-200">Read More</a>
-            </div>
-
-            <!-- Blog Post 3 -->
-            <div class="bg-white bg-opacity-20 rounded-lg p-6 shadow-lg">
-                <h2 class="text-2xl font-bold mb-4 text-white">Creative Tips for AI Art</h2>
-                <p class="text-white mb-4">Learn expert techniques to maximize your creativity using AI-powered digital art tools.</p>
-                <a href="#" class="text-pink-300 hover:text-pink-200">Read More</a>
-            </div>
-        </div>
-    </section>
+    <section class="container mx-auto px-6 py-16 bg-gray-50" style="color: #000;">
+      <div class="text-center mb-12">
+          <h2 class="text-[clamp(1.8rem,4vw,2.5rem)] font-bold mb-4">Latest from Our Blog</h2>
+          <p class="text-dark/70 max-w-2xl mx-auto">Discover insights, tutorials, and news about AI-powered image editing and creative technology.</p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Blog Post 1 -->
+          <article class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 group">
+              <div class="relative h-60 overflow-hidden">
+                  <img src="https://picsum.photos/id/111/800/600" alt="AI Art: The Future of Creativity" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
+                      <div class="p-6">
+                          <div class="flex items-center gap-2 text-white/80 text-sm mb-2">
+                              <span><i class="fa-solid fa-calendar"></i> May 10, 2025</span>
+                              <span><i class="fa-solid fa-user"></i> Alex Johnson</span>
+                          </div>
+                          <h3 class="text-xl font-bold text-white">AI Art: The Future of Creativity</h3>
+                      </div>
+                  </div>
+              </div>
+              <div class="p-6">
+                  <p class="text-dark/70 mb-4">Explore how artificial intelligence is transforming the landscape of digital art and design, enabling new creative possibilities never before imaginable.</p>
+                  <a href="./the-future-of-creativity.html" class="inline-flex items-center gap-2 text-primary font-medium hover:gap-3 transition-all duration-300">
+                      <span>Read More</span>
+                      <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+              </div>
+          </article>
+          
+          <!-- Blog Post 2 -->
+          <article class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 group">
+              <div class="relative h-60 overflow-hidden">
+                  <img src="https://picsum.photos/id/112/800/600" alt="MimicBrush: Behind the Technology" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
+                      <div class="p-6">
+                          <div class="flex items-center gap-2 text-white/80 text-sm mb-2">
+                              <span><i class="fa-solid fa-calendar"></i> April 28, 2025</span>
+                              <span><i class="fa-solid fa-user"></i> Dr. Sarah Chen</span>
+                          </div>
+                          <h3 class="text-xl font-bold text-white">MimicBrush: Behind the Technology</h3>
+                      </div>
+                  </div>
+              </div>
+              <div class="p-6">
+                  <p class="text-dark/70 mb-4">An inside look at the innovative dual U-Net architecture and diffusion prior algorithms that power MimicBrush's creative capabilities.</p>
+                  <a href="./mimicbrush-behind-the-tech.html" class="inline-flex items-center gap-2 text-primary font-medium hover:gap-3 transition-all duration-300">
+                      <span>Read More</span>
+                      <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+              </div>
+          </article>
+          
+          <!-- Blog Post 3 -->
+          <article class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 group">
+              <div class="relative h-60 overflow-hidden">
+                  <img src="https://picsum.photos/id/113/800/600" alt="Creative Tips for AI Art" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
+                      <div class="p-6">
+                          <div class="flex items-center gap-2 text-white/80 text-sm mb-2">
+                              <span><i class="fa-solid fa-calendar"></i> April 15, 2025</span>
+                              <span><i class="fa-solid fa-user"></i> Mia Rodriguez</span>
+                          </div>
+                          <h3 class="text-xl font-bold text-white">Creative Tips for AI Art</h3>
+                      </div>
+                  </div>
+              </div>
+              <div class="p-6">
+                  <p class="text-dark/70 mb-4">Learn expert techniques to maximize your creativity using AI-powered digital art tools, from reference selection to post-processing refinement.</p>
+                  <a href="./creative-tips-for-ai-art.html" class="inline-flex items-center gap-2 text-primary font-medium hover:gap-3 transition-all duration-300">
+                      <span>Read More</span>
+                      <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+              </div>
+          </article>
+      </div>
+      
+      <div class="text-center mt-12">
+          <a href="#" class="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors shadow-lg shadow-primary/20 font-medium">
+              <span>View All Articles</span>
+              <i class="fa-solid fa-arrow-right"></i>
+          </a>
+      </div>
+  </section>
+      
 
     <!-- Footer -->
     <footer class="bg-white">
